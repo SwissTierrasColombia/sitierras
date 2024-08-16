@@ -1,0 +1,7 @@
+services:
+  astro_app:
+    image: "astro_image_app"
+    build: ../.
+    restart: on-failure
+    ports:
+      - 4000:4321

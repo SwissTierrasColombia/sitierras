@@ -1,0 +1,207 @@
+---
+import Layout from "../layouts/Layout.astro";
+import NavBar from "../components/NavBar.astro";
+import Carousel from "../components/Carousel.astro";
+import Card from "../components/Card.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="SwissTierras - Ceicol">
+  <NavBar />
+  <main class="pt-20">
+    <Carousel />
+    <div class="mx-2">
+      <section class="my-20 mx-auto gap-4 md:w-2/3 grid md:grid-cols-2">
+        <Card
+          title="Repositorio de modelos"
+          body=""
+          id="#Modelos"
+          href="https://ceicol.com/models/"
+        >
+          <Fragment slot="image">
+            <svg
+              class="w-40 h-40 text-sky-900 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5.005 11.19V12l6.998 4.042L19 12v-.81M5 16.15v.81L11.997 21l6.998-4.042v-.81M12.003 3 5.005 7.042l6.998 4.042L19 7.042 12.003 3Z"
+              ></path>
+            </svg>
+          </Fragment>
+        </Card>
+        <Card
+          title="Validador web"
+          body=""
+          id="#Validador"
+          href="https://sitierras.com/validador/"
+        >
+          <Fragment slot="image">
+            <svg
+              class="w-40 h-40 text-sky-900 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </Fragment>
+        </Card>
+      </section>
+      <section class="text-black py-10" id="Modelos">
+        <h2 class="max-w-7xl mx-auto text-4xl md:text-5xl font-bold my-10">
+          Repositorio de modelos
+        </h2>
+        <div
+          class="my-4 max-w-7xl rounded-3xl mx-auto min-h-96 bg-gradient-to-tr from-gray-50 to-gray-100"
+        >
+          <div class="mx-auto w-[95%] py-10">
+            <article class="flex flex-col lg:flex-row gap-5 my-4">
+              <div class="lg:w-1/2 text-black grid place-content-center">
+                <img
+                  src="/lotesTierras.webp"
+                  alt="lotes tierras"
+                  loading="lazy"
+                  class="rounded"
+                />
+              </div>
+              <div
+                class="lg:w-1/2 text-black flex flex-col justify-center space-y-10"
+              >
+                <p class="text-2xl font-bold text-balance">
+                  Acceda a nuestro repositorio de modelos y disfruta de las
+                  siguientes ventajas:
+                </p>
+                <ul class="space-y-2 ml-4 text-lg">
+                  <li class="list-disc">
+                    <strong>Acceso Centralizado:</strong> Un único punto de consulta
+                    de los modelos de la administración de tierras.
+                  </li>
+                  <li class="list-disc">
+                    <strong>Actualización Continua:</strong> Consulta los modelos
+                    oficiales y sus actualizaciones para garantizar que todos los
+                    usuarios trabajen con el mismo modelo de datos.
+                  </li>
+                  <li class="list-disc">
+                    <strong>Documentación:</strong> Disponibilidad de documentación
+                    oficial para el uso eficiente de los modelos de datos.
+                  </li>
+                </ul>
+
+                <div>
+                  <a
+                    href="https://ceicol.com/models/"
+                    target="_blank"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-sky-800 rounded-lg hover:bg-sky-900 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    Acceder
+                    <svg
+                      class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="text-black py-10" id="Validador">
+        <h2 class="max-w-7xl mx-auto text-4xl md:text-5xl font-bold my-10">
+          Validador web
+        </h2>
+        <div
+          class="my-4 max-w-7xl rounded-3xl mx-auto min-h-96 bg-gradient-to-tr from-gray-50 to-gray-100"
+        >
+          <div class="mx-auto w-[95%] py-10">
+            <article class="flex-col flex md:flex-row my-4">
+              <div class="h-96 md:w-1/2 text-black">
+                <p class="text-lg text-balance">
+                  Valide sus datos de administración de tierras de manera
+                  <strong>rápida, eficiente y estandarizada</strong> a través de
+                  Internet.
+                </p>
+                <br />
+                <p class="text-lg text-balance">
+                  El validador de datos le permite verificar que su información
+                  se ajuste al modelo de datos requerido y comprobar su
+                  consistencia lógica, temática y topológica de manera sencilla
+                  y ágil. <br />
+                  <br /> Obtenga reportes de su validación de forma rápida a través
+                  de internet.
+                </p>
+                <br />
+                <a
+                  href="https://sitierras.com/validador/"
+                  target="_blank"
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-sky-800 rounded-lg hover:bg-sky-900 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  Acceder
+                  <svg
+                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+                  </svg>
+                </a>
+              </div>
+              <div
+                class="h-96 md:w-1/2 text-white flex justify-center items-center relative"
+              >
+                <div class="absolute inset-0">
+                  <img
+                    src="/screen-laptop.webp"
+                    alt="screen Laptop"
+                    loading="lazy"
+                    class="bottom-20 md:bottom-1 left-2 object-fill absolute w-full"
+                  />
+                  <img
+                    src="/screen-iphone.webp"
+                    alt="screen Iphone"
+                    loading="lazy"
+                    class="bottom-20 md:bottom-1 object-fill absolute w-20 md:w-40"
+                  />
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <Footer />
+</Layout>
+
+<style></style>

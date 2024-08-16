@@ -1,0 +1,68 @@
+---
+interface Props {
+  image: string;
+  city: string;
+  departament: string;
+  link: string;
+}
+
+const { image, city, departament, link } = Astro.props;
+
+const capitalizeFirstLetter = (text: string) => {
+  return text
+    .split(" ")
+    .map((word) => {
+      return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+    })
+    .join(" ");
+};
+---
+
+<div class="h-96 group text-white border relative overflow-hidden">
+  <img
+    src={image}
+    alt={`imagen de ${city}`}
+    loading="lazy"
+    class="h-full w-full contrast-125 object-cover bg-center mx-auto group-hover:scale-110 duration-1000 transition-all ease-in-out"
+  />
+  <p
+    class="absolute top-28 left-0 text-2xl lg:text-4xl text-white text-center w-full font-bold"
+  >
+    {city.toUpperCase()}
+  </p>
+  <p class="absolute top-40 left-0 text-white text-center text-base w-full">
+    {capitalizeFirstLetter(departament)}
+  </p>
+  <div
+    class="absolute flex justify-around items-center bottom-0 xl:-bottom-20 group-hover:bottom-0 left-0 w-full h-20 bg-teal-950/70 transition-all duration-700 ease-in-out"
+  >
+    <div class="flex flex-col items-center justify-center">
+      <h4 class="font-bold text-lg">{capitalizeFirstLetter(city)}</h4>
+      <p class="text-sm">{capitalizeFirstLetter(departament)}</p>
+    </div>
+    <a
+      href={link}
+      class="p-2 rounded-full hover:bg-teal-800"
+      title="Conocer más"
+      target="_blank"
+    >
+      <svg
+        class="w-6 h-6 text-white dark:text-white"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13.213 9.787a3.391 3.391 0 0 0-4.795 0l-3.425 3.426a3.39 3.39 0 0 0 4.795 4.794l.321-.304m-.321-4.49a3.39 3.39 0 0 0 4.795 0l3.424-3.426a3.39 3.39 0 0 0-4.794-4.795l-1.028.961"
+        ></path>
+      </svg>
+    </a>
+  </div>
+</div>
